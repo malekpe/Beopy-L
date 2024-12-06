@@ -4,6 +4,9 @@ En bref Béopy-L c'est ça : 
 <img width="891" alt="image" src="https://github.com/user-attachments/assets/267df7ed-27d9-4721-a8be-ac590ffc13db">
 (pour essayer la disposition https://ergol.org/stats/#/beopy-l//en+fr)
 
+Pour installer Béopy‑L, télécharger le ficher beopy-l.toml, et installer la dispo en utilisant kalamine : https://github.com/OneDeadKey/kalamine/
+<img width="905" alt="image" src="https://github.com/user-attachments/assets/2fc8ae72-5aa6-413f-a536-213d8e22b15a">
+
 Cette disposition est un mélange entre la disposition Bépo (bepo.fr) et Ergo‑L (ergol.org)
 Comment est elle née ? C'est ce que je vais raconter ici :
 
