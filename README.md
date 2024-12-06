@@ -1,183 +1,58 @@
-[Ergo‑L](https://ergol.org/)
-================================================================================
+Béopy-L est une disposition de clavier ergonomique alternative au traditionnel azerty/qwerty
+Elle corrige de très nombreux défauts de qwerty/azerty que vous connaissez sûrement déjà si vous lisez cette page github.
+En bref Béopy-L c'est ça : 
+<img width="891" alt="image" src="https://github.com/user-attachments/assets/267df7ed-27d9-4721-a8be-ac590ffc13db">
+(pour essayer la disposition https://ergol.org/stats/#/beopy-l//en+fr)
 
-[**(in English hereinafter)**](#English)
+Cette disposition est un mélange entre la disposition Bépo (bepo.fr) et Ergo‑L (ergol.org)
+Comment est elle née ? C'est ce que je vais raconter ici :
 
-Une disposition de clavier ergonomique optimisée pour le français, l’anglais et
-le code.
+AVERTISSEMENT: le texte ici présent et bourré de fautes d'orthographe, et je m'en tape. (regardez https://www.youtube.com/watch?v=5YO7Vg1ByA8)
 
-- Disposition **optimisée pour le français _et_ l’anglais**;
-- Couche AltGr optionnelle, optimisée pour l’enchaînement des symboles de
-  programmation;
-- **Conservation des raccourcis usuels** : <kbd>Ctrl-{Q,A,S,Z,X,V}</kbd>
-  (<kbd>Ctrl-C</kbd> est décalé, mais reste faisable d’une main);
-- Support de tous les caractères spéciaux utilisés en français (diacritiques,
-  majuscules accentuées, lettres entrelacées, symboles de ponctuation…);
-- **Chiffres en accès direct**.
+J'ai d'abord découvert le bépo et j'ai commencé à écrire avec cette disposition, cependant après quelque jours à peine, je découvre le Béopy, disposition extrêmement proche du bépo faite par Berijeux https://www.youtube.com/watch?v=oX9ytatFCNA
 
+En gros le Béopy c'est comme le bépo mais en inversant :
+`O` et `P`
+`E` et `I`
+`G` et `Q`
+`È` et `Y`
+ainsi qu'une tournante : `K` -> `Z` -> `W` -> `K`
 
-English
---------------------------------------------------------------------------------
+Malgré le peu de modification le béopy est une amélioration substantielle du bépo car le `W` et le `Y` sont mieux placé pour l'anglais
+Exemple pour le mot « you » :
+<img width="658" alt="image" src="https://github.com/user-attachments/assets/f67f05be-ce02-4478-a24e-1f6952f1db75">
 
-A Colemak-style layout for French-speaking users.
+Cependant le béopy à encore un gros défaut, c'est le fait qu'il ya trop de touche en extension sur l'auriculaire droit : `M`, `K`, `Z` et `Ç`
 
+Après + de 3 ans en béopy je découvre la disposition Ergo‑L, qui corrige définitivement le problème des touches en extension grâce à un principe simple : 
+« Une touche morte pour les diriger toutes »
+En effet en ergo il y a une touche morte (représenté par l'étoile rouge à droite du clavier sur l'image) qui permet ensuite d'accéder à tout les accents utiles en français (indiqué en vert)
+<img width="896" alt="image" src="https://github.com/user-attachments/assets/e1478841-7b4c-412a-ab8d-025894b9cd28">
 
-TL;DR:
---------------------------------------------------------------------------------
+J'essais donc de passer à ergo‑L pour profiter de ses avantages mais deux choses me retienne :
+- la position du `J` en ergo‑L est rédibitoire, je n'aime pas dutout cette position, j'écris sur un clavier décaller et cette touche est infiniment loin de mon petit index droit. À chaque fois que je veux écrire une réponse très rapide, comme « je sais pas » je subis le mauvais placement de la touche `J`.
+- J'ai le béopy dans les doigts, j'écris vite est bien, si je peux éviter de devoir tout réaprendre depuis le début je serais ravis
 
-* a Colemak-style keyboard layout optimized for French and English;
-* most common keyboard shortcuts are preserved (like in Colemak);
-* use a dead key for the most frequent accented characters;
-* use the AltGr layer for programming symbols.
+Alors que faire ?
 
-This layout claims to be better than Bépo for French, better than Dvorak for
-English and better than Qwerty for programming. [Check the stats !][1]
+Créer une nouvelle disposition, le Béopy‑L, qui implémente le principe de la touche morte d'ergo‑L pour ne plu avoir d'extension sur l'auriculaire droit, tout en ne boulversant pas l'entièreté des placements de touches auquel je suis maintenant bien habitué.
 
-[1]: https://ergol.org/stats/#/ergol/iso/en+fr
+De plus l'équipe ergo‑L à fait un formidable travail pour facilité au maximum l'appropriation d'ergo‑L et mettant à disposition des outils qui permette à chacun de s'approprier ergo‑L, (encore merci kazé pour kalamine et encore merci nuclear squid pour ergo‑L et le site internet)
 
+Je suis donc parti de Béopy, j'ai ajouté la touche morte et dégager toutes les touches en extension. J'ai également retravaillé un peu les symboles et la couche alt-gr d'ergo‑L pour rendre l'écriture en latex tout simplemment jouissive (placement de `\`, `^` ect…).
 
-Layout
---------------------------------------------------------------------------------
+C'est ansi que je suis arrivé à Béopy‑L, le boss final, qui profite :
+-De tout les avantage classique des dispositions ergonomique par rapport à qwerty/azerty
+-Des chiffres en accès direct
+-D'un accès à toutes les touche sans extension sur les auriculaire
+-D'un placement agréable pour le `J`
+-D'une couche en alt-gr avec tout les symboles de programmation et latex à porté de main
 
-![base layout](www/content/presentation/ergol_fr.svg)
+Est-ce que vous devriez écrire en béopy‑L ?
+Réponse courte : Non.
+Si vous venez d'azerty, passez à ergo‑L. C'est utilisé par quelque dizaines voir centaines de personne, c'est désormais dans les dispositions de base sur linux. Et vous profiterez des racourcis clavier sur la main gauche avec `C` `V` `A` `X` `S` qui sont bien placés contrairement à Béopy‑L
 
-The dead <kbd>★</kbd> key gives access to all acute accents, grave accents,
-cedillas, digraphs and quote signs you’ll need to write in proper French:
+Vous écrivez en Bépo, vous avez envie de profiter de la plupart des amélioration d'ergo‑L sans réinventer la roue, est-ce que vous devriez écrire en Béopy‑L ?
+Oui. Je pense que c'est précisement la niche dans laquelle Béopy-L peut être utile. Il existe déjà une disposition hybride entre Bépo et Ergo‑L nommé « Bépolar », je prétend que Béopy‑L c'est Bépolar mais en mieux : ça nécessite à peine plus de d'effort que de passer de Bépo à Bépolar pour une amélioration substentielle.
 
-![dead key layout](www/content/presentation/ergol_1dk.svg)
-
-… and the AltGr layer is fully dedicated to programming symbols.
-
-![altgr layout](www/content/presentation/ergol_altgr.svg)
-
-The default layout allows to write in English, French, German and Esperanto
-easily.
-
-[More information on the website](https://ergol.org) (in French).
-
-
-Availability
---------------------------------------------------------------------------------
-
-Kalamine is available on Debian Unstable. It is automatically installed
-via the `xkb-data` package.
-
-Install
---------------------------------------------------------------------------------
-
-You’ll need the latest version of [Kalamine][2] to build your own layout. We
-*highly* recommend using [pipx][5], once you have it installed (by following
-their guide), you can just run the following command:
-
-```bash
-pipx install kalamine
-```
-
-Download the [keymaps/ergol.toml][4] file in this repo and build the layout :
-
-```bash
-kalamine build ergol.toml
-```
-
-You’ll get a `dist` folder containing all the drivers.
-
-Then, to install Ergo‑L, follow the [install section of Kalamine’s repo][3],
-and you should be good to go !
-
-[2]: https://github.com/OneDeadKey/kalamine
-[3]: https://github.com/OneDeadKey/kalamine#installing-distributable-layouts
-[4]: https://github.com/Nuclear-Squid/ergol/blob/master/keymaps/ergol.toml
-[5]: https://github.com/pypa/pipx?tab=readme-ov-file#install-pipx
-
-
-### Install (Linux only)
-
-`xkalamine` is a linux‑specific tool (shipped with `kalamine`) to easily
-install keyboard layouts on Linux. You can drop `sudo` if you use wayland, but
-it’s required on Xorg.
-
-```bash
-sudo xkalamine install ergol.toml  # Install the layout
-```
-
-Then switch to Ergo‑L using the following command:
-
-```bash
-setxkbmap fr -variant ergol  # Switch your keyboard layout to ergol
-```
-
-_Troubleshooting with ubuntu / wayland_
-
-There is a weird issue where Ergo-L works fine with some applications
-(phpstorm, gnome,...) but not on others (libreoffice, terminator). The deadkey
-remain for two chars instead of only one. (ex: `a[deadkey]sen` should display
-`aéen` but it displays `aéèn` instead.).
-
-This issue is solved by adding at the end of `/etc/environment` the following lines:
-
-```bash
-INPUT_METHOD=ibus
-GTK_IM_MODULE=ibus
-QT_IM_MODULE=ibus
-XMODIFIERS=@im=ibus
-```
-
-Make Your Own !
---------------------------------------------------------------------------------
-
-If you wish to modify the layout, the `keymaps/*.{toml,yaml}` are human-readable
-ASCII arts of the final layout. You can easily edit them, then run `make` (or
-`make watch`) at the root of the repo to generate the `.json` files used to
-benchmark layouts on the [stats page][1].
-
-This repo contains all of the code for the [Ergo‑L website](https://ergol.org),
-so you can run the page locally to try your prototypes !
-
-### Edit Corpora
-
-The different corpora can be found in [`corpus/`](corpus/), mainly `fr.txt` and
-`en.txt` which can be edited to change the type of text used (for instance if
-you don’t write like translators of Miguel de Cervantes, or if you want to test
-with your own emails).
-
-If you have multiple source files, you can thus merge them using the
-[`merge.py`](corpus/merge.py) script, for instance:
-
-```bash
-python3 merge.py file-fr‑1.txt … file-fr-n.txt > fr.txt
-```
-
-Once this is done, the statistics file can be generated using the
-[`chardict.py`](corpus/chardict.py) script. Note that for this step, you don’t
-want to have parasitic `.txt` files in the `corpus` directory, or their stats
-will be generated as well.
-
-```bash
-python3 chardict.py
-```
-
-For the sake of completeness, we add that specifying a **single file** after the
-command generates the `json` stat file for this specific corpus.
-
-### Run a Local Server
-
-[Hugo](https://gohugo.io/) can be used to serve the site, it automatically
-watches and live-reload the pages upon file changes, however you still need to
-have `make watch` running to ensure that the `.json` files are generated upon
-modifying human-friendly layouts in `keymaps/*.{to,ya}ml`.
-
-You can thus run your local instance of the Ergo‑L website either by running
-`hugo server` in the [`www/`](www/) directory, or _via_:
-```
-hugo server --source www/
-```
-
-By default, the server will run on port `1313`: http://localhost:1313/
-
-The stats page is now accessible on
-<http://localhost:1313/stats/#/ergol/ol60/fr>!
-
-**Note:** This solution supports live-reload for most parts. While it’s not a
-problem while editing the content, some stats are not fully refreshed with
-live-reload. You may have to manually refresh the stats page after editing a
-layout or a corpus to have the correct version of them.
+Béopy‑L peut aussi être considéré, si, comme moi, vous ne pouvez pas vous résoudre à la position du `J` en ergo-L/Erglace.
